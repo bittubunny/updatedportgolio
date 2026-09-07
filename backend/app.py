@@ -11,6 +11,14 @@ from google.genai import types
 
 app = Flask(__name__)
 
+# Health check / Render root endpoint
+@app.route("/", methods=["GET"])
+def home():
+    return jsonify({
+        "status": "online",
+        "message": "Bharath Portfolio Backend is running successfully"
+    }), 200
+
 CORS(
     app,
     resources={
