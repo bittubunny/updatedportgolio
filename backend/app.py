@@ -25,7 +25,8 @@ CORS(
         r"/*": {
             "origins": [
                 "http://localhost:5173",
-                "https://bharath-portfolio-psi.vercel.app"
+                "https://bharath-portfolio-psi.vercel.app",
+                "https://bharath-portfolio-11c9bwpjo-bharath-chelimallas-projects.vercel.app"
             ]
         }
     },
